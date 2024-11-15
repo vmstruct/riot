@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug_Fortnite|Win32">
+      <Configuration>Debug_Fortnite</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_Fortnite|x64">
+      <Configuration>Debug_Fortnite</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_Valorant|Win32">
+      <Configuration>Debug_Valorant</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_Valorant|x64">
+      <Configuration>Debug_Valorant</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_Fortnite|Win32">
+      <Configuration>Release_Fortnite</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_Fortnite|x64">
+      <Configuration>Release_Fortnite</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_Valorant|Win32">
+      <Configuration>Release_Valorant</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_Valorant|x64">
+      <Configuration>Release_Valorant</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{945746e9-2eee-4031-a1fd-27dc89f60a83}</ProjectGuid>
+    <RootNamespace>user mode</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>user mode</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Valorant|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Fortnite|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Valorant|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Fortnite|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug_Valorant|Win32'">
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug_Valorant|x64'">
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug_Fortnite|Win32'">
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug_Fortnite|x64'">
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\marmasm.props" />
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_Valorant|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_Fortnite|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_Valorant|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_Fortnite|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Valorant|x64'">
+    <OutDir>../builds/</OutDir>
+    <IntDir>../builds/intermediate/</IntDir>
+    <TargetName>user mode</TargetName>
+    <IncludePath>.\;$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Fortnite|x64'">
+    <OutDir>../builds/</OutDir>
+    <IntDir>../builds/intermediate/</IntDir>
+    <TargetName>user mode</TargetName>
+    <IncludePath>.\;$(IncludePath)</IncludePath>
+    <LibraryPath>.\core\backend\libraries\imgui;.\core\backend\libraries\direct;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_Valorant|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_Fortnite|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_Valorant|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_VALORANT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <UACUIAccess>false</UACUIAccess>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_Fortnite|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_FORTNITE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+      <AdditionalDependencies>direct.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <UACUIAccess>false</UACUIAccess>
+    </Link>
+    <MASM>
+      <EnableMASM51Compatibility>false</EnableMASM51Compatibility>
+    </MASM>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="core\backend\libraries\imgui\imgui_impl_dx11.cpp" />
+    <ClCompile Include="core\backend\resources\drv_image\drv_image.cpp" />
+    <ClCompile Include="core\backend\resources\kernel_ctx\kernel_ctx.cpp" />
+    <ClCompile Include="core\external\dependencies\engine\engine.cpp" />
+    <ClCompile Include="core\external\features\visuals\visuals.cpp" />
+    <ClCompile Include="core\backend\libraries\imgui\imgui.cpp" />
+    <ClCompile Include="core\backend\libraries\imgui\imgui_demo.cpp" />
+    <ClCompile Include="core\backend\libraries\imgui\imgui_draw.cpp" />
+    <ClCompile Include="core\backend\libraries\imgui\imgui_impl_win32.cpp" />
+    <ClCompile Include="core\backend\libraries\imgui\imgui_tables.cpp" />
+    <ClCompile Include="core\backend\libraries\imgui\imgui_widgets.cpp" />
+    <ClCompile Include="core\external\render\render.cpp" />
+    <ClCompile Include="core\driver\driver.cpp" />
+    <ClCompile Include="core\source\exception.cpp" />
+    <ClCompile Include="core\source\injector.cpp" />
+    <ClCompile Include="Core\source\main.cpp" />
+    <ClCompile Include="core\source\section.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="core\backend\direct\direct.h" />
+    <ClInclude Include="core\backend\skcrypt\skcrypter.h" />
+    <ClInclude Include="core\backend\termcolor\termcolor.h" />
+    <ClInclude Include="core\backend\libraries\direct\direct.h" />
+    <ClInclude Include="core\driver\ia32\ia32.hpp" />
+    <ClInclude Include="core\driver\ia32\nt.hpp" />
+    <ClInclude Include="core\driver\phys\map.hpp" />
+    <ClInclude Include="core\external\dependencies\math\math.hpp" />
+    <ClInclude Include="core\external\dependencies\engine\structs.hpp" />
+    <ClInclude Include="core\external\dependencies\engine\engine.h" />
+    <ClInclude Include="core\external\dependencies\entities\entities.hpp" />
+    <ClInclude Include="core\external\features\visuals\visuals.h" />
+    <ClInclude Include="core\backend\libraries\imgui\imconfig.h" />
+    <ClInclude Include="core\backend\libraries\imgui\imgui.h" />
+    <ClInclude Include="core\backend\libraries\imgui\imgui_impl_dx11.h" />
+    <ClInclude Include="core\backend\libraries\imgui\imgui_impl_win32.h" />
+    <ClInclude Include="core\backend\libraries\imgui\imgui_internal.h" />
+    <ClInclude Include="core\backend\libraries\imgui\imstb_rectpack.h" />
+    <ClInclude Include="core\backend\libraries\imgui\imstb_textedit.h" />
+    <ClInclude Include="core\backend\libraries\imgui\imstb_truetype.h" />
+    <ClInclude Include="core\external\render\render.h" />
+    <ClInclude Include="core\linkers\exception.h" />
+    <ClInclude Include="core\linkers\injector.h" />
+    <ClInclude Include="core\driver\server.h" />
+    <ClInclude Include="core\backend\resources\drv_image\drv_image.h" />
+    <ClInclude Include="core\backend\resources\kernel_ctx\kernel_ctx.h" />
+    <ClInclude Include="core\backend\resources\loadup.h" />
+    <ClInclude Include="core\backend\resources\physmeme\physmeme.h" />
+    <ClInclude Include="core\backend\resources\raw_driver.h" />
+    <ClInclude Include="core\backend\resources\util\hook.h" />
+    <ClInclude Include="core\backend\resources\util\nt.h" />
+    <ClInclude Include="core\backend\resources\util\util.h" />
+    <ClInclude Include="core\driver\driver.hpp" />
+    <ClInclude Include="core\linkers\instrum.hpp" />
+    <ClInclude Include="core\linkers\section.hpp" />
+    <ClInclude Include="Core\linkers\stdafx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="core\backend\libraries\direct\direct.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <MASM Include="core\backend\assembly\instrum.asm">
+      <EnableMASM51Compatibility Condition="'$(Configuration)|$(Platform)'=='Release_Fortnite|x64'">true</EnableMASM51Compatibility>
+      <GenerateDebugInformation Condition="'$(Configuration)|$(Platform)'=='Release_Fortnite|x64'">true</GenerateDebugInformation>
+      <MakeAllSymbolsPublic Condition="'$(Configuration)|$(Platform)'=='Release_Fortnite|x64'">true</MakeAllSymbolsPublic>
+    </MASM>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\marmasm.targets" />
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

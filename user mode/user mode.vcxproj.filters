@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Core\source\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\driver\driver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\backend\resources\kernel_ctx\kernel_ctx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\backend\resources\drv_image\drv_image.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\source\injector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\external\render\render.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\external\features\visuals\visuals.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\backend\libraries\imgui\imgui.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\backend\libraries\imgui\imgui_demo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\backend\libraries\imgui\imgui_draw.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\backend\libraries\imgui\imgui_impl_win32.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\backend\libraries\imgui\imgui_tables.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\backend\libraries\imgui\imgui_widgets.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\backend\libraries\imgui\imgui_impl_dx11.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\external\dependencies\engine\engine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\source\section.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\source\exception.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Core\linkers\stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\driver\driver.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\backend\resources\raw_driver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\backend\resources\loadup.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\backend\resources\util\util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\backend\resources\util\nt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\backend\resources\util\hook.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\backend\resources\physmeme\physmeme.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\backend\resources\kernel_ctx\kernel_ctx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\backend\resources\drv_image\drv_image.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\driver\server.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\linkers\injector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\backend\direct\direct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\backend\termcolor\termcolor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\backend\skcrypt\skcrypter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\backend\libraries\direct\direct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\external\render\render.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\external\features\visuals\visuals.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\external\dependencies\engine\engine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\external\dependencies\entities\entities.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\external\dependencies\engine\structs.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\backend\libraries\imgui\imconfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\backend\libraries\imgui\imgui.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\backend\libraries\imgui\imgui_impl_dx11.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\backend\libraries\imgui\imgui_impl_win32.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\backend\libraries\imgui\imgui_internal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\backend\libraries\imgui\imstb_rectpack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\backend\libraries\imgui\imstb_textedit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\backend\libraries\imgui\imstb_truetype.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\driver\ia32\ia32.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\driver\ia32\nt.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\external\dependencies\math\math.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\linkers\section.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\linkers\instrum.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\driver\phys\map.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\linkers\exception.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="core\backend\libraries\direct\direct.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <MASM Include="core\backend\assembly\instrum.asm">
+      <Filter>Source Files</Filter>
+    </MASM>
+  </ItemGroup>
+</Project>
